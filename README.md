@@ -12,3 +12,5 @@ To create new user name write _**sudo adduser username**_
 Also, in Ubuntu normally use command as _**chmod -rwxrwxrwx file_name**_ for changing permission and _**chown username_wanted_to_assign filename**_
 
 Fore example, _**chmod 777 filename**_
+
+** For two users, we can share permission of a folder by this cmd, _**sudo setfacl -R -m u:chickenuser:rwx yourdatafolder**_ for directory folder permission. Also, to verify the permission, we can use _**getfacl -R yourdatafolder**_
