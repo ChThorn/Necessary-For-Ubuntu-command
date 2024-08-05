@@ -3,14 +3,18 @@ In Ubuntu, there are three types of divisions for users which are owner, group, 
 
 The first user or admin is normally named root
 
-To access this root, you have to write _**su root**_ in the terminal. And its password is written as _**sudo passwd your_username**_
+To access this root, you have to write `su root` in the terminal. And its password is written as `sudo passwd your_username`
 
-If you want to clear or delete the password, write _**sudo passwd -d your_username**_
+If you want to clear or delete the password, write `sudo passwd -d your_username`
 
-To create new user name write _**sudo adduser username**_
+To create new user name write `sudo adduser username`
 
-Also, in Ubuntu normally use command as _**chmod -rwxrwxrwx file_name**_ for changing permission and _**chown username_wanted_to_assign filename**_
+Also, in Ubuntu normally use command as `chmod -rwxrwxrwx file_name` for changing permission and `chown username_wanted_to_assign filename`
 
-Fore example, _**chmod 777 filename**_
+Fore example, `chmod 777 filename`
 
-** For two users, we can share permission of a folder by this cmd, _**sudo setfacl -R -m u:chickenuser:rwx yourdatafolder**_ for directory folder permission. Also, to verify the permission, we can use _**getfacl -R yourdatafolder**_
+## For two users, we can share permission of a folder by this cmd,
+
+`sudo setfacl -R -m u:chickenuser:rwx yourdatafolder` for directory folder permission. 
+
+Also, to verify the permission, we can use `getfacl -R yourdatafolder`.
